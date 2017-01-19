@@ -8,7 +8,7 @@
     <figure>
       <img src="drivy-logo.png"/>
     </figure>
-    <grid id="menu">
+    <div id="menuClasse" class="menuClasse">
       <div id="car">
         <input class="model" type="text" placeholder="Car model"/>
         <input class="price-by-day" type="number" placeholder="Price by day"/>
@@ -18,22 +18,22 @@
         <input class="begin" type="date" placeholder="Rental begin date"/>
         <input class="end" type="date" placeholder="Rental end date"/>
         <input class="distance" type="number" placeholder="Distance in km"/>
-        <input class="option" type="checkbox" placeholder="Deductible option"/>
+        <input class="option" id="option" type="checkbox" placeholder="Deductible option"/>
       </div>
       <button id="compute">Compute</button>
       <div id="actors"></div>
       <script id="template" type="x-tmpl-mustache">
         {{#actors}}
           <div class="actor">
-            <span>{{who}}</span>
-            <span>{{type}}</span>
-            <span>{{amount}}</span>
+            <span style:{color:withe;}>{{who}}</span>
+            <span style:{color:withe;}>{{type}}</span>
+            <span style:{color:withe;}>{{amount}}</span>
           </div>
         {{/actors}}
       </script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
       <script src="drivy.js"></script>
       <script src="index.js"></script>
-    </grid>
+    </div>
   </body>
 </html>
